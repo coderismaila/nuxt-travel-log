@@ -13,6 +13,13 @@ const authStore = useAuthStore();
           Keep trak of your travels and adventures with this simple travel log app. Add locations, places and notes to create a digital journal of your journeys.
         </p>
         <AuthButton v-if="!authStore.user" />
+        <NuxtLink
+          v-else
+          to="/dashboard"
+          class="btn btn-primary"
+        >
+          Start Logging
+        </NuxtLink>
       </div>
     </div>
   </div>
