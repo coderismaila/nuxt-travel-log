@@ -25,7 +25,7 @@ const onSubmit = handleSubmit(async (values) => {
     });
 
     submitted.value = true;
-    // navigateTo("/dashboard");
+    navigateTo("/dashboard");
   }
   catch (e) {
     const error = e as FetchError;
