@@ -29,7 +29,7 @@ function toggleSidebar() {
       </div>
       <div class="flex flex-col">
         <SidebarButton
-          href="/dashboard/locations"
+          href="/dashboard"
           :show-label="isSidebarOpen"
           label="Locations"
           icon="tabler:map"
@@ -49,7 +49,7 @@ function toggleSidebar() {
         />
       </div>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 overflow-auto bg-base-200">
       <NuxtPage />
     </div>
   </div>
