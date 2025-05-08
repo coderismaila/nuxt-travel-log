@@ -32,7 +32,7 @@ const onSubmit = handleSubmit(async (values) => {
     if (error.data?.data) {
       setErrors(error.data?.data);
     }
-    submitError.value = error.statusMessage || "An unexpected error occured";
+    submitError.value = error.data?.statusMessage || error.statusMessage || "An unexpected error occured";
   }
   loading.value = false;
 });
