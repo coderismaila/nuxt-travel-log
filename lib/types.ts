@@ -8,3 +8,13 @@ declare module "h3" {
     };
   }
 }
+
+export type LatLongItem = {
+  lat: number;
+  long: number;
+};
+
+export type MapPoint = {
+  id: number;
+  label: string;
+} & LatLongItem;

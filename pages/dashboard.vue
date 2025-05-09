@@ -20,7 +20,7 @@ function toggleSidebar() {
 <template>
   <div class="flex-1 flex">
     <div
-      class="bg-base-100 transition-all duration-300"
+      class="bg-base-100 transition-all duration-300 shrink-0"
       :class="{ 'w-64': isSidebarOpen, 'w-16': !isSidebarOpen }"
     >
       <div
@@ -78,8 +78,10 @@ function toggleSidebar() {
       </div>
     </div>
     <div class="flex-1 flex flex-col overflow-auto bg-base-200">
-      <NuxtPage />
-      <AppMap class="flex-1" />
+      <div class="flex flex-col size-full">
+        <NuxtPage />
+        <AppMap class="flex-1" />
+      </div>
     </div>
   </div>
 </template>
